@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
+    'travello.apps.TravelloConfig',
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
@@ -76,11 +77,12 @@ WSGI_APPLICATION = 'ex1.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgres',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'telusko',
         'USER': 'postgres',
         'PASSWORD':'pranav6603',
-        'HOST':'localhost'
+        'HOST':'localhost',
+        'PORT':'5432'
     }
 }
 
